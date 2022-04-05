@@ -1,12 +1,25 @@
 const dateTarget = new Date('04/13/2022 06:00 AM');
-const days = document.querySelector('.days');
-const hours = document.querySelector('.hours');
-const minutes = document.querySelector('.minutes');
-const seconds = document.querySelector('.seconds');
+const remainingTime = document.querySelector('#remainingTime');
 const milisecondsOfASecond = 1000;
 const milisecondsOfAMinute = milisecondsOfASecond * 60;
 const milisecondsOfAHour = milisecondsOfAMinute * 60;
 const milisecondsOfADay = milisecondsOfAHour * 24;
+const colors = [
+   '#d39af3',
+   '#d39af3',
+   '#BC96E6',
+   '#d39af3',
+   '#d39af3',
+   '#BC96E6',
+   '#d39af3',
+   '#d39af3',
+   '#BC96E6',
+   '#d39af3',
+];
+
+function changeBackground(color) {
+    document.body.style.background = color;
+}
 
 function updateCountdown() {
     const now = new Date();
@@ -16,10 +29,10 @@ function updateCountdown() {
     const remainingMinutes = Math.floor((duration % milisecondsOfAHour) / milisecondsOfAMinute);
     const remainingSeconds = Math.floor((duration % milisecondsOfAMinute) / milisecondsOfASecond);
 
-    days.textContent = remainingsDays + ' dias';
-    hours.textContent = remainingsHours + ' : ';
-    minutes.textContent = remainingMinutes + ' :';
-    seconds.textContent = remainingSeconds;
+    remainingTime.textContent = `${remainingsDays} dias, ${remainingsHours} : ${remainingMinutes} : ${remainingSeconds}`
+
+    const index = parseInt(remainingSeconds.toString().slice(-1))
+    changeBackground(colors[index]);
 }
 
 updateCountdown();
