@@ -1,4 +1,4 @@
-const dateTarget = new Date('04/13/2022 4:30 AM');
+const dateTarget = new Date('05/13/2022 5:30 AM');
 const remainingTime = document.querySelector('#remainingTime');
 const milisecondsOfASecond = 1000;
 const milisecondsOfAMinute = milisecondsOfASecond * 60;
