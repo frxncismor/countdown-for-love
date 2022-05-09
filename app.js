@@ -14,7 +14,7 @@ function changeBackground(color) {
 }
 
 function hideCounter() {
-    remainingTime.textContent = 'Disfruta tu vuelo, al rato te veo';
+    remainingTime.textContent = 'Viajando 686km para verte, llego en poco tiempo';
 }
 
 function launchFireworks() {
