@@ -1,4 +1,4 @@
-const dateTarget = new Date('06/03/2022 8:30 PM');
+const dateTarget = new Date('06/03/2022 8:50 PM');
 const remainingTime = document.querySelector('#remainingTime');
 const milisecondsOfASecond = 1000;
 const milisecondsOfAMinute = milisecondsOfASecond * 60;
@@ -14,7 +14,7 @@ function changeBackground(color) {
 }
 
 function hideCounter() {
-    remainingTime.textContent = 'Viajando 686km para verte, llego en poco tiempo';
+    remainingTime.textContent = '¿Estás lista para la aventura de 2 meses? ¡Te amo, feliz viaje!';
 }
 
 function launchFireworks() {
