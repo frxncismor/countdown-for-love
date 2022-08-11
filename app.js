@@ -1,4 +1,4 @@
-const dateTarget = new Date('06/03/2022 8:50 PM');
+const dateTarget = new Date('08/25/2022 9:05 PM');
 const remainingTime = document.querySelector('#remainingTime');
 const milisecondsOfASecond = 1000;
 const milisecondsOfAMinute = milisecondsOfASecond * 60;
@@ -6,7 +6,7 @@ const milisecondsOfAHour = milisecondsOfAMinute * 60;
 const milisecondsOfADay = milisecondsOfAHour * 24;
 const fireworks = document.querySelector('#fireworks');
 const colors = [
-   '#d39af3'
+    '#d39af3'
 ];
 
 function changeBackground(color) {
@@ -14,7 +14,7 @@ function changeBackground(color) {
 }
 
 function hideCounter() {
-    remainingTime.textContent = '¿Estás lista para la aventura de 2 meses? ¡Te amo, feliz viaje!';
+    remainingTime.textContent = '🎶 Sentí frio y tu me abrigaste, he caido y tu me levantaste... 🎶';
 }
 
 function launchFireworks() {
