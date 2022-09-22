@@ -1,4 +1,4 @@
-const dateTarget = new Date('08/25/2022 9:05 PM');
+const dateTarget = new Date('10/15/2022 5:00 PM');
 const remainingTime = document.querySelector('#remainingTime');
 const milisecondsOfASecond = 1000;
 const milisecondsOfAMinute = milisecondsOfASecond * 60;
@@ -14,7 +14,7 @@ function changeBackground(color) {
 }
 
 function hideCounter() {
-    remainingTime.textContent = '🎶 Sentí frio y tu me abrigaste, he caido y tu me levantaste... 🎶';
+    remainingTime.textContent = 'Vienes a pasar el tiempo conmigo? Estoy a un uber de distancia ';
 }
 
 function launchFireworks() {
